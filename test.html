@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/Styles.css">
+    </head>
+    <body>
+      <div class="container w-50 bg-blur bg-opacity-25 bg-light my-5 py-4 px-4 rounded-3">
+        <h1>CRUproductPriceD system</h1>
+        <label>productName: </label>
+        <input id="productName" type="text" class="form-control">
+        <label>productCategory: </label>
+        <input id="productCategory" type="text" class="form-control">
+        <label>productPrice:</label>
+        <input id="productPrice" type="text" class="form-control">
+        <label>productDescription: </label>
+        <textarea id="productDescription" class="form-control"></textarea><br/>
+        <button id="update" class="btn btn-outline-primary" onclick="addProducts()">add product</button>
+        <button class="btn btn-outline-danger" onclick="clearproduct()">clear</button>
+      </div>
+      
+       <input type="text" placeholder="search..." id="searchInput" class="form-control w-50 mx-auto" oninput="search()">
+       <table class="table container my-2">
+        <thead>
+          <th>Index:</th>
+          <th>Name:</th>
+          <th>Category</th>
+          <th>Price:</th>
+          <th>Description</th>
+          <th>Update</th>
+          <th>Delete</th>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+       </table>
+
+         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/myScript.js"></script>
+    </body>
+</html>

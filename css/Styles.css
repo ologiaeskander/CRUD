@@ -1,0 +1,8 @@
+body {
+  background-image: url('/home/ologia/ECU/Internet Programming/CRUD/pexels-karolina-grabowska-4705833.jpg');
+  background-size: cover; 
+  background-attachment: fixed; 
+}
+.bg-blur{
+  backdrop-filter: blur(2px);
+}
